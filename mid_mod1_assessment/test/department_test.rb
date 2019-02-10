@@ -13,4 +13,8 @@ class DepartmentTest < Minitest::Test
   def test_department_exists
     assert_instance_of Department, @customer_service
   end
+
+  def test_department_has_name
+    assert_equal "Customer Service", @customer_service.name
+  end
 end
