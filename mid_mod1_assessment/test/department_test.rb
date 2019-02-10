@@ -21,4 +21,10 @@ class DepartmentTest < Minitest::Test
   def test_department_starts_with_no_employees
     assert_equal [], @customer_service.employees
   end
+
+  def test_department_can_hire_employees
+    @customer_service.hire(@bobbi)
+    @customer_service.hire(@aaron)
+    assert_equal [@bobbi, @aaron], @customer_service.employees
+  end
 end
