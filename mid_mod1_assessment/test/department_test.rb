@@ -27,4 +27,8 @@ class DepartmentTest < Minitest::Test
     @customer_service.hire(@aaron)
     assert_equal [@bobbi, @aaron], @customer_service.employees
   end
+
+  def test_department_starts_with_no_expenses
+    assert_equal 0, @customer_service.expenses
+  end
 end
