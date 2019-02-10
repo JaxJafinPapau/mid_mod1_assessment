@@ -8,4 +8,8 @@ class Department
     @name = name
     @employees = []
   end
+
+  def hire(new_hire)
+    @employees << new_hire
+  end
 end
