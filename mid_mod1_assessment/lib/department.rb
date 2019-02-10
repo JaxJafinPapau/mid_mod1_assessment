@@ -15,7 +15,7 @@ class Department
     @employees << new_hire
   end
 
-  def method_name
-
+  def expense(dollars)
+    @expenses += dollars
   end
 end
