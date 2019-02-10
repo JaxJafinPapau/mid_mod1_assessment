@@ -31,4 +31,10 @@ class DepartmentTest < Minitest::Test
   def test_department_starts_with_no_expenses
     assert_equal 0, @customer_service.expenses
   end
+
+  def test_department_can_add_expense
+    @customer_service.expense(100)
+    @customer_service.expense(25)
+    assert_equal 125, @customer_service.expenses
+  end
 end
