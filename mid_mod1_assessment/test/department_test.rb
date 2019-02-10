@@ -8,4 +8,9 @@ class DepartmentTest < Minitest::Test
     @bobbi = Employee.new({name: "Bobbi Jaeger", age: "30", salary: "100000"})
     @aaron = Employee.new({name: "Aaron Tanaka", age: "25", salary: "90000"})
     @customer_service = Department.new("Customer Service")
+  end
+
+  def test_department_exists
+    assert_instance_of Department, @customer_service
+  end
 end

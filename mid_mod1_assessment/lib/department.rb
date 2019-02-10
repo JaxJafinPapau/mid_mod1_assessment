@@ -1,7 +1,9 @@
 require './lib/employee'
 
 class Department
-  def initialize(argument)
-    @argument = argument
+  attr_reader :name
+  
+  def initialize(name)
+    @name = name
   end
 end
