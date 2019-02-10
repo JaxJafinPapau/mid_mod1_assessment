@@ -11,4 +11,8 @@ class EmployeeTest < Minitest::Test
   def test_employee_exists
     assert_instance_of Employee, @bobbi
   end
+
+  def test_employee_has_name
+    assert_equal "Bobbi Jaeger", @bobbi.name
+  end
 end
